@@ -2,7 +2,7 @@ name: Connection tests
 
 on:
   schedule:
-    - cron: '* */1 * * *'
+    - cron: '*/60 * * * *'
   push:
     branches:
       - master
