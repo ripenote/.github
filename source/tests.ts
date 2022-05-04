@@ -156,11 +156,11 @@
       debug(`updated static/site`)
 
     //Update readme
-      await Deno.writeTextFile("README.md", (await Deno.readTextFile("README.md"))
+      await Deno.writeTextFile("profile/README.md", (await Deno.readTextFile("profile/README.md"))
         .replace(/<!-- <downtime-status> -->[\s\S]*?<!-- <downtime-status[/]> -->/g,
           ["<!-- <downtime-status> -->", ...hosts.map((host:host) => `![${host.title ?? host.name}](/${host.files.path.status})`), "<!-- <downtime-status/> -->"].join("\n"))
       )
-      debug(`updated README.md`)
+      debug(`updated profile/README.md`)
   }
 
 //Cleans
