@@ -4,19 +4,11 @@
 # All defaults values can be overriden per host basis
 hosts:
   # Example / test root domain
-  - name: google.com
-    title: Google
+  - name: ripenote.vercel.app
+    title: RipeNote Portal
   # Example / test url
-  - name: github.com/lowlighter/downtime
-    title: Downtime repository
-  # Example / test ip with port using ncat
-  - name: "8.8.8.8"
-    title: Google DNS
-    port: 53
-    use: ncat
-  # Example / unavailable website
-  - name: unavailable.website.com
-    title: Unavailable website
+  - name: minecraft-ripenote.vercel.app
+    title: Minecraft RipeNote
 
 # Site configuration
 site:
